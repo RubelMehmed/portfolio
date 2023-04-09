@@ -1,12 +1,31 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
+// import Tilt from 'react-tilt';
+
 
 import { github } from "../assets";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
+
+// tilt default options here__________________
+
+const defaultOptions = {
+  max: 45,      // max tilt rotation (degrees)
+  scale: 1,    // 2 = 200%, 1.5 = 150%, etc..
+  speed: 450,  // Speed of the enter/exit transition
+	// reverse:        false,  // reverse the tilt direction
+	// max:            35,     
+	// perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
+	// scale:          1.1,    
+	// speed:          1000,   
+	// transition:     true,   // Set a transition on enter/exit.
+	// axis:           null,   // What axis should be disabled. Can be X or Y.
+	// reset:          true,    // If the tilt effect has to be reset on exit.
+	// easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
 
 const ProjectCard = ({
   index,
@@ -19,11 +38,7 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        options={defaultOptions}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>

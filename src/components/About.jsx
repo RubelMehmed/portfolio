@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
+// import Tilt from 'react-tilt';
 
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
