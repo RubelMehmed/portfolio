@@ -2,9 +2,11 @@ import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
 import github from "./github.png";
+import linkedin from "./linkedin.svg";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
+import twitter from "./twitter.svg";
 import web from "./web.png";
 
 import css from "./tech/css.png";
@@ -13,11 +15,14 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import materialui from "./tech/materialui.svg";
 import mongodb from "./tech/mongodb.png";
+import mysql from "./tech/mysql.svg";
 import next from "./tech/next.svg";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import sass from "./tech/sass.svg";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
@@ -39,6 +44,8 @@ export {
   mobile,
   web,
   github,
+  twitter,
+  linkedin,
   menu,
   close,
   css,
@@ -54,6 +61,9 @@ export {
   redux,
   next,
   tailwind,
+  sass,
+  materialui,
+  mysql,
   typescript,
   threejs,
   meta,

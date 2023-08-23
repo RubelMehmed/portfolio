@@ -1,5 +1,5 @@
 import {
-  backend, carrent, creator, css, figma, git, html, javascript, jobit, meta, mobile, mongodb, next, nodejs, reactjs,
+  backend, carrent, creator, figma, git, javascript, jobit, materialui, meta, mobile, mongodb, next, nodejs, reactjs,
   redux, shopify, starbucks, tailwind, tesla, threejs, tripguide, typescript, web, wordpress
 } from "../assets";
 
@@ -38,14 +38,10 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -71,13 +67,14 @@ const technologies = [
     icon: next,
   },
   {
-    name: "Wordpress",
-    icon: wordpress,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
+  {
+    name: "Wordpress",
+    icon: wordpress,
+  },
+  
   {
     name: "MongoDB",
     icon: mongodb,
@@ -86,6 +83,11 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  {
+    name: "Material UI",
+    icon: materialui,
+  },
+
   {
     name: "git",
     icon: git,
