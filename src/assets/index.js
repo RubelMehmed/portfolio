@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
+import wordpress from "./tech/wordpress.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -41,6 +42,7 @@ export {
   close,
   css,
   docker,
+  wordpress,
   figma,
   git,
   html,
