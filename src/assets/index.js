@@ -14,6 +14,7 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
+import next from "./tech/next.svg";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
@@ -51,6 +52,7 @@ export {
   nodejs,
   reactjs,
   redux,
+  next,
   tailwind,
   typescript,
   threejs,
