@@ -1,6 +1,7 @@
 import {
   backend, carrent, creator, figma, git, javascript, jobit, materialui, meta, mobile, mongodb, next, nodejs, reactjs,
-  redux, shopify, starbucks, tailwind, tesla, threejs, tripguide, typescript, web, wordpress
+  redux, shopify, starbucks, tailwind,
+  threejs, tripguide, typescript, web, wordpress
 } from "../assets";
 
 export const navLinks = [
@@ -102,55 +103,43 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
+    company_name: "Shopkpr",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2021 - Sep 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Build and maintain web apps with React.js and related tech.",
+      "Collaborate with cross-functional teams for quality products.",
+      "Implement responsive design, ensure cross-browser compatibility.",
+      "Participate in code reviews, offer constructive feedback.",
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
   {
     title: "Web Developer",
-    company_name: "Shopify",
+    company_name: "Webbattalion",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and maintain web apps with React.js, WordPress, and related tech.",
+      "Collaborate with cross-functional teams for top-notch products.",
+      "Implement responsive design, ensure cross-browser compatibility.",
+      "Participate in code reviews, give constructive feedback",
     ],
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "Codemanbd",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Build and maintain full-stack web applications using the MERN stack.",
+      "Collaborate with cross-functional teams to create high-quality products.",
+      "Implement responsive design, ensuring cross-browser compatibility.",
+      "Participate in code reviews and offer constructive feedback to teammates."
+    ]    
   },
 ];
 
@@ -158,7 +147,7 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+    name: "John North",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
@@ -166,7 +155,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+    name: "Adam Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
@@ -183,12 +172,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Car Expo",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Web-based destination to explore the latest automotive wonders. Immerse yourself in the world of cars, discover innovation, and experience driving excellence. Drive into the future at Car Expo!",
     tags: [
       {
-        name: "react",
+        name: "mect.js",
         color: "blue-text-gradient",
       },
       {
@@ -201,12 +190,12 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/RubelMehmed/car_expo",
   },
   {
-    name: "Job IT",
+    name: "Adopt Pet",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Discover joy through our 'Adopt Pet' app—connecting you with lovable companions ready to fill your home with love and warmth. Adopt happiness today!",
     tags: [
       {
         name: "react",
@@ -217,17 +206,17 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/RubelMehmed/revite",
   },
   {
-    name: "Trip Guide",
+    name: "AI Summerizer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An intelligent app that quickly condenses and summarizes lengthy content, providing users with concise insights and key information",
     tags: [
       {
         name: "nextjs",
@@ -243,9 +232,9 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/RubelMehmed/sumz",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
 
