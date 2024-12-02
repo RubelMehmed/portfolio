@@ -48,4 +48,4 @@ const Overview = () => {
   )
 }
 
-export default SectionWrapper(Overview, "Overview")
+export default SectionWrapper(Overview, "")

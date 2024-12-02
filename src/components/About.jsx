@@ -89,6 +89,26 @@ const About = () => {
               <p className="grid-subtext">
                 An Undergraduate Student of Geography and Environment
               </p>
+              <a
+                href="https://linkedin.com/in/rubelmehmed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group"
+            >
+              
+              <div className="w-16 h-16 flex items-center justify-center bg-blue-600      rounded-full shadow-lg hover:bg-blue-700 transition-colors overflow-hidden">
+                <img
+                  src="../assets/tech/linkedin.png"
+                  alt="LinkedIn"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+
+              {/* Hover Text */}
+              <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-sm rounded px-2 py-1 top-20 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                LinkedIn: rubelmehmed
+              </span>
+            </a>
             </div>
           </div>
         </div>
@@ -112,17 +132,32 @@ const About = () => {
 
                 labelsData={[{ lat: 23.80, lng: 90.41, text: 'Dhaka, Bangladesh', color: 'white', size: 49 }]}
               />
+
             </div>
             <div>
               <p className="grid-headtext">Globally Flexible with Time Zone</p>
               <p className="grid-subtext">I am open to research fellowship opportunities worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a
+                href="https://linkedin.com/in/rubelmehmed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full mt-10 flex items-center justify-center"
+              >
+                <Button name="Contact Me" isBeam containerClass="w-full mt-10">
+                  <img
+                    src="../assets/tech/linkedin.png"
+                    alt="LinkedIn Logo"
+                    className="w-5 h-5 ml-2"
+                  />
+                </Button>
+              </a>
+
             </div>
           </div>
         </div>
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="src\assets\techsolar.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="src\assets\techsolar.png" alt="techsolar" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Tech Stack Domains</p>

@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const FeedbackCard = ({
+const CirtificateCard = ({
   index,
   testimonial,
   name,
@@ -43,7 +43,7 @@ const FeedbackCard = ({
   </motion.div>
 );
 
-const Feedbacks = () => {
+const Cirtifications = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`} id='testimonial'>
       <div
@@ -56,11 +56,11 @@ const Feedbacks = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+          <CirtificateCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Cirtifications, "cirtifications");
