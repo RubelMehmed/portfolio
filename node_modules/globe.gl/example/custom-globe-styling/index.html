@@ -1,0 +1,32 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="//unpkg.com/globe.gl"></script>
+<!--    <script src="../../dist/globe.gl.js"></script>-->
+</head>
+
+<body>
+  <div id="globeViz"></div>
+
+  <script type="module">
+    import * as THREE from '//unpkg.com/three/build/three.module.js';
+
+    const world = Globe()
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+      .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
+      (document.getElementById('globeViz'));
+
+    // custom globe material
+    const globeMaterial = world.globeMaterial();
+    globeMaterial.bumpScale = 10;
+    new THREE.TextureLoader().load('//unpkg.com/three-globe/example/img/earth-water.png', texture => {
+      globeMaterial.specularMap = texture;
+      globeMaterial.specular = new THREE.Color('grey');
+      globeMaterial.shininess = 15;
+    });
+
+    const directionalLight = world.lights().find(light => light.type === 'DirectionalLight');
+    directionalLight && directionalLight.position.set(1, 1, 1); // change light position to see the specularMap's effect
+  </script>
+</body>

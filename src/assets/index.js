@@ -37,41 +37,16 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import bttc from "./bttc.png";
+import dc from "./dc.svg";
+import fm from "./fm.png";
+import ju from "./ju.png";
+import niyd from "./niyd.png";
+import ph from "./ph.png";
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  twitter,
-  linkedin,
-  menu,
-  close,
-  css,
-  docker,
-  wordpress,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  next,
-  tailwind,
-  sass,
-  materialui,
-  mysql,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  backend, bttc, carrent, close, creator, css, dc, docker, figma, fm, git, github, html,
+  javascript, jobit, ju, linkedin, logo, materialui, menu, meta, mobile, mongodb, mysql, next, niyd, nodejs, ph, reactjs,
+  redux, sass, shopify,
+  starbucks, tailwind, tesla, threejs, tripguide, twitter, typescript, web, wordpress
 };
 

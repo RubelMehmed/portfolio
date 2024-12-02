@@ -65,6 +65,56 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* About second section */
+.arrow-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+}
+/* about section */
+.grid-container {
+  @apply w-full h-full border border-black-200 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+}
+
+.grid-headtext {
+  @apply text-xl font-semibold mb-2 text-white font-sans;
+}
+
+.grid-subtext {
+  @apply text-[#afb0b6] text-base font-mono;
+}
+
+.copy-container {
+  @apply cursor-pointer flex justify-center items-center gap-2;
+}
+
+/* projects section  */
+.arrow-btn {
+  @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
+}
+
+.tech-logo {
+  @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+}
+/* button component */
+
+/* button component */
+.btn {
+  @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-200 font-sans transition-all active:scale-95 text-white hover:text-sky-400 mx-auto;
+}
+
+.btn-ping {
+  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
+}
+
+.btn-ping_dot {
+  @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
+}
+
 /* Footer icon */
 .footer {
   position: relative;

@@ -1,6 +1,16 @@
 import {
-  backend, carrent, creator, figma, git, javascript, jobit, materialui, meta, mobile, mongodb, next, nodejs, reactjs,
-  redux, shopify, starbucks, tailwind,
+  backend,
+  bttc,
+  carrent, creator, figma, git, javascript, jobit,
+  ju,
+  materialui,
+  mobile, mongodb, next,
+  niyd,
+  nodejs,
+  ph,
+  reactjs,
+  redux,
+  tailwind,
   threejs, tripguide, typescript, web, wordpress
 } from "../assets";
 
@@ -10,8 +20,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "experience",
+    title: "Experiences",
+  },
+  {
     id: "work",
-    title: "Work",
+    title: "Projects",
+  },
+  {
+    id: "testimonial",
+    title: "Cirtifications",
   },
   {
     id: "contact",
@@ -102,45 +120,60 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Shopkpr",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2021 - Sep 2022",
+    title: "Geography and Environment",
+    company_name: "Jahangirnagar University, Savar",
+    icon: ju,
+    iconBg: "#E6DEDD",
+    date: "Jan 2020 - Present",
     points: [
-      "Build and maintain web apps with React.js and related tech.",
-      "Collaborate with cross-functional teams for quality products.",
-      "Implement responsive design, ensure cross-browser compatibility.",
-      "Participate in code reviews, offer constructive feedback.",
+      "BSc in Geography and Environment",
+      "GIS and Remote Sensing Lab Training",
+      "Data Analysis workshops",
+      "Academic Research",
+    ]    
+  },
+  
+  {
+    title: "Web Development and Application",
+    company_name: "National Institute of Youth  Development, Savar",
+    icon: niyd,
+    iconBg: "#383E56",
+    date: "Sep 2022 - Feb 2023",
+    points: [
+      "C Programming, Basic Python",
+      "Functional JavaScript, React.js, Django",
+      "MySQL, DBMS Management",
+      "Cisco Networking, Blockchain and Cryptocurrency",
+    ],
+  },
+  {
+    title: "MERN Stack Development",
+    company_name: "Programming-Hero, Dhaka",
+    icon: ph,
+    iconBg: "#383E56",
+    date: "Jun 2021 - Dec 2021",
+    points: [
+      "HTML-5, CSS-3, Bootstrap",
+      "JavaScript, React.js",
+      "Node,js, Express.js, and MongoDB",
+      "Responsive Design, Figma",
     ],
   },
   
   {
-    title: "Web Developer",
-    company_name: "Webbattalion",
-    icon: shopify,
+    title: "Computer Operation",
+    company_name: "Technical Training Center, Rajbari",
+    icon: bttc,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jun 2019 - Dec 2019",
     points: [
-      "Develop and maintain web apps with React.js, WordPress, and related tech.",
-      "Collaborate with cross-functional teams for top-notch products.",
-      "Implement responsive design, ensure cross-browser compatibility.",
-      "Participate in code reviews, give constructive feedback",
+      "Basic Computer Application",
+      "Microsoft Office",
+      "Basic Hardware Assembly",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Codemanbd",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Build and maintain full-stack web applications using the MERN stack.",
-      "Collaborate with cross-functional teams to create high-quality products.",
-      "Implement responsive design, ensuring cross-browser compatibility.",
-      "Participate in code reviews and offer constructive feedback to teammates."
-    ]    
-  },
+  
+  
 ];
 
 const testimonials = [
@@ -234,7 +267,21 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/RubelMehmed/sumz",
   },
+
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+// for overiver section of about comoponent
+
+const skillsData = [
+  { category: "Programming Languages", skills: "Python, JavaScript, R" },
+  { category: "Geospatial Tools & Platforms", skills: "ArcGIS, QGIS, Google Earth Engine" },
+  { category: "Data Science & Geospatial Libraries", skills: "Pandas, GeoPandas, Scikit-learn" },
+  { category: "Mapping Platforms", skills: "Leaflet, Mapbox" },
+  { category: "Web Development", skills: "React.js" },
+  { category: "Database Systems", skills: "PostgreSQL (PostGIS)" },
+  { category: "Approach", skills: "Leveraging advanced geospatial technologies and data science techniques, dedicated to innovative solutions for global challenges" }
+];
+
+
+export { experiences, projects, services, skillsData, technologies, testimonials };
 
