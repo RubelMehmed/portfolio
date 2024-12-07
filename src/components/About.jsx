@@ -90,7 +90,7 @@ const About = () => {
                 An Undergraduate Student of Geography and Environment
               </p>
               <a
-                href="https://linkedin.com/in/rubelmehmed"
+                href="https://github.com/rubelmehmed"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative group"
@@ -98,15 +98,15 @@ const About = () => {
               
               <div className="w-16 h-16 flex items-center justify-center bg-blue-600      rounded-full shadow-lg hover:bg-blue-700 transition-colors overflow-hidden">
                 <img
-                  src="../assets/tech/linkedin.png"
-                  alt="LinkedIn"
-                  className="w-10 h-10 object-contain"
+                  src="../assets/tech/github.png"
+                  alt="Github"
+                  // className="w-10 h-10 object-contain"
                 />
               </div>
 
               {/* Hover Text */}
               <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-sm rounded px-2 py-1 top-20 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                LinkedIn: rubelmehmed
+          
               </span>
             </a>
             </div>
