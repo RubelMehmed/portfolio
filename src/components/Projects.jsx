@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { Tilt } from "react-tilt";
 // import Tilt from 'react-tilt';
 
 
-import { github } from "../assets";
+import { github } from "../assets/social/index.js";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
