@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 
-const Certification = ({
+const CertificationCard = ({
   index,
   title,
   provider,
@@ -45,7 +45,7 @@ const Certifications = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {certifications.map((cert, index) => (
-          <Certification key={cert.title} index={index} {...cert} />
+          <CertificationCard key={cert.title} index={index} {...cert} />
         ))}
       </div>
     </div>

@@ -10,112 +10,153 @@ import {
 } from "../assets";
 // Import images for socialContacts
 
- import { datacamp, gmail, kaggle, linkedin, xlogo } from '../assets/social';
+import { datacamp, gmail, kaggle, linkedin, xlogo } from '../assets/social';
+
 import {
-  anaconda,
-  anymap,
   arcgis,
-  bootstrap,
-  esri,
-  figma,
-  gdal,
   gee,
   geemap,
-  geer,
   geopandas,
-  git,
   github,
   javascript,
-  jupyter,
-  leaflet,
   leafmap,
-  maplibre,
-  materialui,
   matplotlib,
-  mongodb,
   mysql,
-  next,
-  nodejs,
   numpy,
   pandas,
   postgresql,
-  // GIS & Data Science
   python,
-  qgis,
   reactjs,
-  redux,
-  rstudio,
-  sass,
-  seaborn,
-  tailwind,
-  threejs,
-  vscode,
-  wordpress
-} from '../assets/tech'; // Adjust path if necessary
+  seaborn
+} from '../assets/tech';
 
-const technologies = [
-  // --- Web Development ---
-  { name: "JavaScript", icon: javascript },
-  { name: "React JS", icon: reactjs },
-  { name: "Redux Toolkit", icon: redux },
-  { name: "Three JS", icon: threejs },
-  { name: "Next JS", icon: next },
-  { name: "Node JS", icon: nodejs },
-  { name: "WordPress", icon: wordpress },
-  { name: "MongoDB", icon: mongodb },
-  { name: "MySQL", icon: mysql },
-  { name: "PostgreSQL", icon: postgresql },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Bootstrap", icon: bootstrap },
-  { name: "Material UI", icon: materialui },
-  { name: "SASS", icon: sass },
-  
 
-  // --- GIS / Data Science ---
-  { name: "Python", icon: python },
-  { name: "Anaconda", icon: anaconda },
-  { name: "Jupyter Notebook", icon: jupyter },
-  { name: "RStudio", icon: rstudio },
-  { name: "NumPy", icon: numpy },
-  { name: "Pandas", icon: pandas },
-  { name: "Matplotlib", icon: matplotlib },
-  { name: "Seaborn", icon: seaborn },
-  { name: "GeoPandas", icon: geopandas },
-  { name: "GDAL", icon: gdal },
-  { name: "ArcGIS", icon: arcgis },
-  { name: "QGIS", icon: qgis },
-  { name: "ESRI", icon: esri },
-  { name: "Google Earth Engine", icon: gee },
-  { name: "GEER", icon: geer },
-  { name: "Geemap", icon: geemap },
-  { name: "Leafmap", icon: leafmap },
-  { name: "Anymap", icon: anymap },
-  { name: "Leaflet", icon: leaflet },
-  { name: "MapLibre", icon: maplibre },
-
-  // --- Tools & Design ---
-  { name: "Git", icon: git },
-  { name: "VSCode", icon: vscode },
-  { name: "Figma", icon: figma },
+import { arset, esri } from '../assets/training';
+const trainings = [
+  {
+    title: "Spatial Data Analysis with ArcGIS Pro",
+    institution: "Esri",
+    year: "2024",
+    skills: ["ArcGIS Pro", "Geospatial Analysis", "Data Visualization"],
+    certificate: "https://www.esri.com/training/certificate/link-to-certificate",
+    logo: esri
+  },
+  {
+    title: "Remote Sensing for Disaster Risk Management",
+    institution: "NASA ARSET",
+    year: "2023",
+    skills: ["Remote Sensing", "Disaster Analysis", "Earth Observation"],
+    certificate: "https://arset.gsfc.nasa.gov/certificate-link",
+    logo: arset
+  },
+  {
+    title: "National Youth Development Program",
+    institution: "NIYD",
+    year: "2022",
+    skills: ["Leadership", "Team Collaboration", "Policy Engagement"],
+    certificate: "",
+    logo: niyd
+  },
+  {
+    title: "Web GIS and GeoAI",
+    institution: "Jahangirnagar University (JU)",
+    year: "2023",
+    skills: ["Web GIS", "Machine Learning", "Spatial Intelligence"],
+    certificate: "https://drive.google.com/your-certificate-link",
+    logo: ju
+  },
+  {
+    title: "Geospatial Data Science with Python",
+    institution: "Python for Geospatial",
+    year: "2023",
+    skills: ["Python", "Geospatial Libraries", "Data Science"],
+    certificate: "https://www.pythongeospatial.org/certificate-link",
+    logo: ph
+  },
 ];
 
 
-export const navLinks = [
+const technologies = [
+  
+  {
+    name: "Arcgis",
+    icon: arcgis
+  },
+  {
+    name: "GEE",
+    icon: gee
+  },
+  {
+    name: "Geemaps",
+    icon: geemap
+  },
+  {
+    name: "Leafmap",
+    icon: leafmap
+  },
+  {
+    name: "Python",
+    icon: python
+  },
+  {
+    name: "NumPy",
+    icon: numpy
+  },
+  {
+    name: "Pandas",
+    icon: pandas
+  },
+  {
+    name: "Matplotlib",
+    icon: matplotlib
+  },
+  {
+    name: "Seaborn",
+    icon: seaborn
+  },
+  {
+    name: "GeoPandas",
+    icon: geopandas
+  },
+  {
+    name: "JavaScript",
+    icon: javascript 
+  },
+  { 
+    name: "React JS",
+    icon: reactjs
+  },
+  {
+    name: "MySQL",
+    icon: mysql
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql
+  },
+];
+
+  
+const navLinks = [
   {
     id: "about",
     title: "About",
   },
   {
     id: "experiences",
-    title: "Experiences",
+    title: "Education",
   },
   {
     id: "projects",
     title: "Projects",
   },
   {
-    id: "cirtifications",
-    title: "Cirtifications",
+    id: "certifications",
+    title: "Certifications",
+  },
+  {
+    id: "training",
+    title: "Training",
   },
   {
     id: "contact",
@@ -342,9 +383,13 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/RubelMehmed/sumz",
   },
-
 ];
+
+
 // ________Certifications constants________
+
+
+
 const certifications = [
   {
     title: "Advanced GIS Techniques",
@@ -421,8 +466,7 @@ const profiles = [
 ];
 
 
-export { certifications, experiences, profiles, projects, services, skillsData, socialContacts, technologies };
-
+export { certifications, experiences, navLinks, profiles, projects, services, skillsData, socialContacts, technologies, trainings };
 // const testimonials = [
 //   {
 //     testimonial:

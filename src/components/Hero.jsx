@@ -1,4 +1,3 @@
-
 import { styles } from "../styles";
 
 const Hero = () => {
@@ -17,8 +16,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Rubel Fakir</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I transform data into <br className='sm:block hidden' /> interactive maps, visualizations,and web-apps
           </p>
         </div>
       </div>
