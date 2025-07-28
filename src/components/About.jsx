@@ -8,23 +8,23 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
-    className='xs:w-[250px] w-full'
+    className='xs:w-[200px] w-full'
     options={{ max: 45, scale: 1, speed: 450 }}
   >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full green-pink-gradient p-[1px] rounded-[16px] shadow-card'
     >
       <div
         options={{ max: 45, scale: 1, speed: 450 }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[16px] py-4 px-7 min-h-[220px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
           alt={`${title} icon`}
-          className='w-16 h-16 object-contain'
+          className='w-14 h-14 object-contain'
         />
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[18px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -44,7 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a <span className="text-[#8B5CF6] font-semibold">GIS Analyst</span>, <span className="text-[#7588dd] font-semibold">Data Analyst</span>, and <span className="text-[#d6dce6] font-semibold">Web Developer</span>, specialized in transforming data into interactive maps, intuitive visualizations, and full-stack applications that drive informed decision-making.
+        I'm a <span className="text-[#d7952a] font-semibold">GIS Analyst</span>, <span className="text-[#1b3fe0] font-semibold">Data Analyst</span>, and <span className="text-[#d6dce6] font-semibold">Web Developer</span>, specialized in transforming data into interactive maps, intuitive visualizations, and full-stack applications that drive informed decision-making.
       </motion.p>
 
       {/* <div className="flex gap-2 flex-wrap mt-4">
@@ -58,7 +58,7 @@ const About = () => {
         ))}
       </div> */}
 
-      <div className='mt-20 flex flex-wrap gap-8'>
+      <div className='mt-10 flex flex-wrap gap-8'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

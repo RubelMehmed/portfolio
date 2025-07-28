@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -42,7 +41,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-3 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -68,7 +67,7 @@ const Experiences = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col' >
+      <div className='mt-10 flex flex-col' >
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

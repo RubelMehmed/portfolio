@@ -6,6 +6,7 @@ import {
   tripguide,
   web
 } from "../assets";
+import { eco, fds, kiva } from "../assets/projects";
 // Import images for socialContacts
 
 import { datacamp, gmail, kaggle, linkedin, xlogo } from '../assets/social';
@@ -216,7 +217,10 @@ const navLinks = [
     id: "projects",
     title: "Projects",
   },
- 
+  {
+    id: "tech",
+    title: "Expertise",
+  },
   {
     id: "training",
     title: "Training",
@@ -248,67 +252,6 @@ const services = [
   
 ];
 
-// const technologies = [
-//   // {
-//   //   name: "CSS 3",
-//   //   icon: css,
-//   // },
-//   {
-//     name: "JavaScript",
-//     icon: javascript,
-//   },
-//   {
-//     name: "TypeScript",
-//     icon: typescript,
-//   },
-//   {
-//     name: "React JS",
-//     icon: reactjs,
-//   },
-//   {
-//     name: "Redux Toolkit",
-//     icon: redux,
-//   },
-//   {
-//     name: "Three JS",
-//     icon: threejs,
-//   },
-//   {
-//     name: "Next JS",
-//     icon: next,
-//   },
-//   {
-//     name: "Node JS",
-//     icon: nodejs,
-//   },
-//   {
-//     name: "Wordpress",
-//     icon: wordpress,
-//   },
-  
-//   {
-//     name: "MongoDB",
-//     icon: mongodb,
-//   },
-//   {
-//     name: "Tailwind CSS",
-//     icon: tailwind,
-//   },
-//   {
-//     name: "Material UI",
-//     icon: materialui,
-//   },
-
-//   {
-//     name: "git",
-//     icon: git,
-//   },
-//   {
-//     name: "figma",
-//     icon: figma,
-//   },
-  
-// ];
 
 const experiences = [
   {
@@ -370,12 +313,75 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Expo",
+    name: "Env-Conservation",
     description:
-      "A Web-based destination to explore the latest automotive wonders. Immerse yourself in the world of cars, discover innovation, and experience driving excellence. Drive into the future at Car Expo!",
+      "A map visualizing environmental conservation forest accross New York.",
     tags: [
       {
-        name: "mect.js",
+        name: "geopandas",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "matplotlib",
+        color: "green-text-gradient",
+      },
+      {
+        name: "seaborn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: eco,
+    source_code_link: "https://github.com/RubelMehmed/geospatial_analysis/blob/main/scripts/env_conservaton.ipynb",
+  },
+  {
+    name: "Loan Map",
+    description:
+      "A map visualizing Kiva, an NGO, loan opportunities across the globe.",
+    tags: [
+      {
+        name: "geopandas",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "matplotlib",
+        color: "green-text-gradient",
+      },
+      {
+        name: "seaborn",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kiva,
+    source_code_link: "https://github.com/RubelMehmed/geospatial_analysis/blob/main/scripts/env_conservation.ipynb",
+  },
+  {
+    name: "Flood Model",
+    description:
+      "A comprehensive flood simulation model that predicts flood events using historical data.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pandas",
+        color: "green-text-gradient",
+      },
+      {
+        name: "matplotlib",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fds,
+    source_code_link: "https://github.com/RubelMehmed/flood_model",
+  },
+  {
+    name: "Car Expo",
+    description:
+      "A Web-based destination to explore the latest automotive wonders. Drive into the future at Car Expo!",
+    tags: [
+      {
+        name: "react",
         color: "blue-text-gradient",
       },
       {
@@ -393,7 +399,7 @@ const projects = [
   {
     name: "Adopt Pet",
     description:
-      "Discover joy through our 'Adopt Pet' app—connecting you with lovable companions ready to fill your home with love and warmth. Adopt happiness today!",
+      "Discover joy through 'Adopt Pet' app—connecting with companions to fill home with love and warmth.",
     tags: [
       {
         name: "react",
@@ -414,7 +420,7 @@ const projects = [
   {
     name: "AI Summerizer",
     description:
-      "An intelligent app that quickly condenses and summarizes lengthy content, providing users with concise insights and key information",
+      "An intelligent app that quickly condenses and summarizes lengthy content, providing user with concise",
     tags: [
       {
         name: "nextjs",

@@ -8,7 +8,8 @@ import khs from "./khs.png";
 import niyd from "./niyd.png";
 import ph from "./ph.png";
 import rgc from "./rgc.jpeg";
+import RubelMehmed from "./RubelMehmed.png";
 export {
-    arset, bmet, dc, esri, fm, ju, khs, niyd, ph, rgc
+    arset, bmet, dc, esri, fm, ju, khs, niyd, ph, rgc, RubelMehmed
 };
 
