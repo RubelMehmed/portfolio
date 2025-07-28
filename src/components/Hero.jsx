@@ -13,7 +13,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Rubel Fakir</span>
+            Hi, I'm <span className='text-[#a9abe9]'>Rubel Fakir</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I transform data into <br className='sm:block hidden' /> interactive maps, visualizations,and web-apps

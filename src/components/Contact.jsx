@@ -12,7 +12,7 @@ const Contact = () => {
     <div className='xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Find me on</p>
         <h3 className={styles.sectionHeadText}>Contact & Profiles.</h3>
@@ -20,12 +20,12 @@ const Contact = () => {
         <div className='mt-8 grid grid-cols-2 gap-6'>
           {/* Contact Platforms */}
           <div>
-            {/* <h4 className='text-white font-medium text-[18px] mb-4'>Contact Platforms</h4> */}
+            {/* <h4 className='text-white font-medium text-[18px] mb-4  bg-black-100'>Contact Platforms</h4> */}
             <div className='flex flex-col gap-4'>
               {socialContacts.map((item) => (
                 <div
                   key={item.name}
-                  className='flex items-center gap-3 bg-gradient-to-r from-blue-900 to-purple-800 rounded-full px-4 py-2 shadow-lg'
+                  className='flex items-center gap-3  rounded-full px-4 py-2 shadow-lg'
                 >
                   <img
                     src={item.logo}
@@ -52,7 +52,7 @@ const Contact = () => {
               {profiles.map((item) => (
                 <div
                   key={item.name}
-                  className='flex items-center gap-3 bg-gradient-to-r from-blue-900 to-purple-800 rounded-full px-4 py-2 shadow-lg'
+                  className='flex items-center gap-3  rounded-full px-4 py-2 shadow-lg'
                 >
                   <img
                     src={item.logo}
@@ -85,3 +85,5 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+// bg-gradient-to-r from-blue-900 to-purple-800
+// bg-gradient-to-r from-blue-900 to-purple-800

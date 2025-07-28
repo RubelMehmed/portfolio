@@ -1,10 +1,8 @@
 import {
   backend,
-  bttc,
   carrent, creator, jobit,
   ju, mobile,
   niyd,
-  ph,
   tripguide,
   web
 } from "../assets";
@@ -31,48 +29,116 @@ import {
 } from '../assets/tech';
 
 
-import { arset, esri } from '../assets/training';
+import { arset, bmet, esri, fm, rgc } from '../assets/training';
 const trainings = [
   {
-    title: "Spatial Data Analysis with ArcGIS Pro",
-    institution: "Esri",
+    title: "Introduction to ArcGIS Pro:Essential Workflows",
+    institution: "Esri Bangladesh",
     year: "2024",
-    skills: ["ArcGIS Pro", "Geospatial Analysis", "Data Visualization"],
-    certificate: "https://www.esri.com/training/certificate/link-to-certificate",
+    skills: ["ArcGIS Pro", "Geospatial Analysis", "Trend Analysis"],
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1749616054656/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
     logo: esri
   },
   {
-    title: "Remote Sensing for Disaster Risk Management",
+    title: "Earth Observations of BlueCarbon Ecosystems",
     institution: "NASA ARSET",
     year: "2023",
     skills: ["Remote Sensing", "Disaster Analysis", "Earth Observation"],
-    certificate: "https://arset.gsfc.nasa.gov/certificate-link",
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1753679346259/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
     logo: arset
   },
+  
   {
-    title: "National Youth Development Program",
-    institution: "NIYD",
-    year: "2022",
-    skills: ["Leadership", "Team Collaboration", "Policy Engagement"],
-    certificate: "",
-    logo: niyd
-  },
-  {
-    title: "Web GIS and GeoAI",
-    institution: "Jahangirnagar University (JU)",
-    year: "2023",
-    skills: ["Web GIS", "Machine Learning", "Spatial Intelligence"],
-    certificate: "https://drive.google.com/your-certificate-link",
+    title: "Data Science using Python",
+    institution: "Jahangirnagar University",
+    year: "2024",
+    skills: [ "Pandas", "Seaborn", "Matplotlib", ],
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1735203140531/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
     logo: ju
   },
+  
   {
-    title: "Geospatial Data Science with Python",
-    institution: "Python for Geospatial",
-    year: "2023",
+    title: "Visualizing Geospatial Data in Python",
+    institution: "DataCamp",
+    year: "2024",
     skills: ["Python", "Geospatial Libraries", "Data Science"],
-    certificate: "https://www.pythongeospatial.org/certificate-link",
-    logo: ph
+    certificate: "https://www.datacamp.com/statement-of-accomplishment/course/3bad2a7103cdeb5bb8a53f03a5aec6fc8de4822b?raw=1",
+    logo: datacamp
   },
+  {
+    title: "Exploratoy Data Analysis in Python",
+    institution: "DataCamp",
+    year: "2024",
+    skills: ["Python", "Geospatial Libraries", "Data Science"],
+    certificate: "https://www.datacamp.com/statement-of-accomplishment/course/e354285bd3481f63286cfec2da8ee2230d659684?raw=1",
+    logo: datacamp
+  },
+   {
+    title: "Data Analyst in Python",
+    institution: "DataCamp",
+    year: "2024",
+    skills: ["Python", "Geospatial Libraries", "Data Science"],
+    certificate: "https://www.datacamp.com/statement-of-accomplishment/track/2ca21518166e1cd85f352d643686a7e90aec146b?raw=1",
+    logo: datacamp
+  },
+   {
+    title: "Introduction to Node.js, v2",
+    institution: "Frontend Masters",
+    year: "2023",
+    skills: [ "Node.js", "Express", "APIs"],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/rhuQtnYZzv/node-js-v2.pdf",
+    logo: fm
+  },
+  {
+    title: "Diploma in Web Application Development",
+    institution: "National Institute of Youth Development",
+    year: "2023",
+    skills: ["Python", "Django", "MySQL"],
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1735201460558/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
+    logo: niyd
+  },
+   {
+    title: "The Hard Parts of Functional JavaScript",
+    institution: "Frontend Masters",
+    year: "2023",
+    skills: ["Functional Programming", "Currying", "Composition"],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/LNUxgOqjlG/functional-js-fundamentals.pdf/",
+    logo: fm
+  },
+   
+   {
+    title: "JavaScript: The Hard Parts",
+    institution: "Frontend Masters",
+    year: "2023",
+    skills: ["State Management", "Error Handling", "Debugging",],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/fjjCYVxYTO/javascript-hard-parts-v2.pdf/",
+    logo: fm
+  },
+  {
+    title: "Functional JavaScript First Steps",
+    institution: "Frontend Masters",
+    year: "2023",
+    skills: ["Ajax", "Promises", "Async/Await"],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/jIKTAxiZEg/functional-first-steps.pdf",
+    logo: fm
+  },
+   {
+    title: "Complete Intro to React, v8",
+    institution: "Frontend Masters",
+    year: "2022",
+    skills: ["React", "Redux", "Hooks",],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/BoYXCMJijv/complete-react-v8.pdf",
+    logo: fm
+  },
+  {
+    title: "Computer Operation",
+    institution: "Technical Training Center, Rajbari",
+    year: "2020",
+    skills: ["Computer Basics", "MS Office Suite", "Hardware Assembly"],
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1735201793586/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
+    logo: bmet
+  },
+    
 ];
 
 
@@ -150,10 +216,7 @@ const navLinks = [
     id: "projects",
     title: "Projects",
   },
-  {
-    id: "certifications",
-    title: "Certifications",
-  },
+ 
   {
     id: "training",
     title: "Training",
@@ -255,10 +318,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2025 -  Present",
     points: [
-      "Remote Sensing for Resource Appraisal and Mapping, Application of Geographic Information Systems",
-      "Disaster Risk Management, Urban Systems, Regional Development and Planning", "Environmental Economics, Law and Sustainability",
-      "Research in GeoInformatics, GIScience, and GeoAI",
-    ]    
+      "Remote Sensing, GIS, Disaster Risk Management, Regional Development and Planning",
+      ]
   },
   {
     title: "BSc in Geography and Environment",
@@ -267,54 +328,42 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2020 - April 2025",
     points: [
-      "GIS and Remote Sensing Lab Training",
-      "Data Analysis workshops",
-      "Academic Research",
-      "cliimatology, environmental modeling, oceanography, hydrology, spatial analysis, urban development, and disaster management",
-    ]    
+      "GIS and Remote Sensing, Climatology, Environmental Modeling, Oceanography, Hydrology, Spatial Analysis",
+    ]
   },
   
   {
-    title: "Web Development and Application",
-    company_name: "National Institute of Youth  Development, Savar",
-    icon: niyd,
+    title: "Higher Secondary Certificate",
+    company_name: "Rajbari Government College",
+    icon: rgc,
     iconBg: "#383E56",
-    date: "Sep 2022 - Feb 2023",
+    date: "April 2016 - May 2019",
     points: [
-      "C Programming, Basic Python",
-      "Functional JavaScript, React.js, Django",
-      "MySQL, DBMS Management",
-      "Cisco Networking, Blockchain and Cryptocurrency",
-    ],
-  },
-  {
-    title: "MERN Stack Development",
-    company_name: "Programming-Hero, Dhaka",
-    icon: ph,
-    iconBg: "#383E56",
-    date: "Jun 2021 - Dec 2021",
-    points: [
-      "HTML-5, CSS-3, Bootstrap",
-      "JavaScript, React.js",
-      "Node,js, Express.js, and MongoDB",
-      "Responsive Design, Figma",
-    ],
-  },
-  
-  {
-    title: "Computer Operation",
-    company_name: "Technical Training Center, Rajbari",
-    icon: bttc,
-    iconBg: "#383E56",
-    date: "Jun 2019 - Dec 2019",
-    points: [
-      "Basic Computer Application",
-      "Microsoft Office",
-      "Basic Hardware Assembly",
+      "Science Section",
     ],
   },
   
   
+  // {
+  //   title: "Secondary School Certificate",
+  //   company_name: "Kola Sadar Uddin High School, Rajbari",
+  //   icon: khs,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2011 - Feb 2016",
+  //   points: [
+  //     "Science Section",
+  //   ],
+  // },
+  // {
+  //   title: "Primary Education Certificate",
+  //   company_name: "Baliadangi Govt. Primary School, Rajbari",
+  //   icon: bmet,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2006 - Dec 2010",
+  //   points: [
+  //     "Primary Education",
+  //   ]
+  // },
 ];
 
 
@@ -421,13 +470,15 @@ const certifications = [
 // for overiver section of about comoponent
 
 const skillsData = [
-  { category: "Programming Languages", skills: "Python, JavaScript, R" },
-  { category: "Geospatial Tools & Platforms", skills: "ArcGIS, QGIS, Google Earth Engine" },
-  { category: "Data Science & Geospatial Libraries", skills: "Pandas, GeoPandas, Scikit-learn" },
-  { category: "Mapping Platforms", skills: "Leaflet, Mapbox" },
-  { category: "Web Development", skills: "React.js" },
-  { category: "Database Systems", skills: "PostgreSQL (PostGIS)" },
-  { category: "Approach", skills: "Leveraging advanced geospatial technologies and data science techniques, dedicated to innovative solutions for global challenges" }
+  { category: "Programming Languages", skills: "Python, JavaScript, R, C" },
+  { category: "Geospatial Analysis Tools", skills: "ArcGIS, QGIS, Google Earth Engine, Google Earth Pro" },
+  { category: "Data Anaytics & Visualization", skills: "Pandas, Numpy, Matplotlib, Scikit-learn, Seaborn, " },
+  { category: "Spatial Libraries ", skills: "ArcPy, GeoPandas, Rasterio, Geemap, Leafmap, MapLibre" },
+  { category: "Web Development", skills: "React.js, Next.js, Tailwind, Bootstrap, SASS, CSS3" },
+  { category: "Database Systems", skills: "MySQL, MongoDB, PostgreSQL (PostGIS)" },
+  { category: "Version control & IDEs", skills: "Git, GitHub, VS Code, Jupyter Notebook, Colab" },
+  { category: "Productivity Tools", skills: "Jira, Notion, Slack, Microsoft Office Suite, Google Workspace" },
+  { category: "Soft Skills", skills: "Analytical Thinking, Problem Solving, Leadership, Team Collaboration, Communication, Adaptability" },
 ];
 const socialContacts = [
   {
@@ -436,8 +487,8 @@ const socialContacts = [
     logo: linkedin,
   },
   {
-    name: "X (Twitter)",
-    url: "https://twitter.com/rubelmehmed",
+    name: "X ",
+    url: "https://x.com/rubelmehmed",
     logo: xlogo,
   },
   {

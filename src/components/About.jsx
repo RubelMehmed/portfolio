@@ -44,10 +44,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a <span className="text-[#8B5CF6] font-semibold">GIS Analyst</span>, <span className="text-[#22D3EE] font-semibold">Data Analyst</span>, and <span className="text-[#FBBF24] font-semibold">Web Developer</span>, specialized in transforming data into interactive maps, intuitive visualizations, and full-stack applications that drive informed decision-making.
+        I'm a <span className="text-[#8B5CF6] font-semibold">GIS Analyst</span>, <span className="text-[#7588dd] font-semibold">Data Analyst</span>, and <span className="text-[#d6dce6] font-semibold">Web Developer</span>, specialized in transforming data into interactive maps, intuitive visualizations, and full-stack applications that drive informed decision-making.
       </motion.p>
 
-      <div className="flex gap-4 flex-wrap mt-6">
+      {/* <div className="flex gap-2 flex-wrap mt-4">
         {["GIS Analyst", "Data Analyst", "Web Developer"].map((role, idx) => (
           <span
             key={idx}
@@ -56,9 +56,9 @@ const About = () => {
             {role}
           </span>
         ))}
-      </div>
+      </div> */}
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-8'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

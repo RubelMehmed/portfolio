@@ -21,6 +21,7 @@ node_modules/
 dist/
 .next/
 out/
+.zip
 
 # Vite cache
 .vite/
