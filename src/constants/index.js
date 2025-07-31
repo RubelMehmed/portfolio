@@ -6,7 +6,7 @@ import {
   tripguide,
   web
 } from "../assets";
-import { eco, fds, kiva } from "../assets/projects";
+import { dasymaps, eco, fds, kiva, riverbas } from "../assets/projects";
 // Import images for socialContacts
 
 import { datacamp, gmail, kaggle, linkedin, xlogo } from '../assets/social';
@@ -33,20 +33,20 @@ import {
 import { arset, bmet, esri, fm, rgc } from '../assets/training';
 const trainings = [
   {
+    title: "Geopatial Analysis",
+    institution: "Kaggle",
+    year: "2025",
+    skills: ["geopandas", "folium", "matplotlib"],
+    certificate: "https://www.kaggle.com/learn/certification/rubelmehmed/geospatial-analysis",
+    logo: kaggle
+  },
+  {
     title: "Introduction to ArcGIS Pro:Essential Workflows",
     institution: "Esri Bangladesh",
     year: "2024",
     skills: ["ArcGIS Pro", "Geospatial Analysis", "Trend Analysis"],
     certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1749616054656/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
     logo: esri
-  },
-  {
-    title: "Earth Observations of BlueCarbon Ecosystems",
-    institution: "NASA ARSET",
-    year: "2023",
-    skills: ["Remote Sensing", "Disaster Analysis", "Earth Observation"],
-    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1753679346259/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
-    logo: arset
   },
   
   {
@@ -82,13 +82,13 @@ const trainings = [
     certificate: "https://www.datacamp.com/statement-of-accomplishment/track/2ca21518166e1cd85f352d643686a7e90aec146b?raw=1",
     logo: datacamp
   },
-   {
-    title: "Introduction to Node.js, v2",
-    institution: "Frontend Masters",
+  {
+    title: "Earth Observations of BlueCarbon Ecosystems",
+    institution: "NASA ARSET",
     year: "2023",
-    skills: [ "Node.js", "Express", "APIs"],
-    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/rhuQtnYZzv/node-js-v2.pdf",
-    logo: fm
+    skills: ["Remote Sensing", "Disaster Analysis", "Earth Observation"],
+    certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1753679346259/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
+    logo: arset
   },
   {
     title: "Diploma in Web Application Development",
@@ -98,6 +98,15 @@ const trainings = [
     certificate: "https://www.linkedin.com/in/rubelmehmed/details/certifications/1735201460558/single-media-viewer/?profileId=ACoAADSO0pUBSHFFhdqS2TpkOaccMVK1ukatvDU",
     logo: niyd
   },
+   {
+    title: "Introduction to Node.js, v2",
+    institution: "Frontend Masters",
+    year: "2023",
+    skills: [ "Node.js", "Express", "APIs"],
+    certificate: "https://static.frontendmasters.com/ud/c/33bc0cb500/rhuQtnYZzv/node-js-v2.pdf",
+    logo: fm
+  },
+  
    {
     title: "The Hard Parts of Functional JavaScript",
     institution: "Frontend Masters",
@@ -223,7 +232,7 @@ const navLinks = [
   },
   {
     id: "training",
-    title: "Training",
+    title: "Certifications",
   },
   {
     id: "contact",
@@ -354,6 +363,7 @@ const projects = [
     image: kiva,
     source_code_link: "https://github.com/RubelMehmed/geospatial_analysis/blob/main/scripts/env_conservation.ipynb",
   },
+  
   {
     name: "Flood Model",
     description:
@@ -374,6 +384,48 @@ const projects = [
     ],
     image: fds,
     source_code_link: "https://github.com/RubelMehmed/flood_model",
+  },
+  {
+    name: "Dasymetric Map",
+    description:
+      "A GIS map visualizing high-res land use distribution in Dhaka City.",
+    tags: [
+      {
+        name: "ArcGIS Pro",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spatial Analysis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dasymaps,
+    source_code_link: "https://github.com/RubelMehmed/geospatial_analysis/blob/main/scripts/env_conservaton.ipynb",
+  },
+  {
+    name: "River Basin Map",
+    description:
+      "A GIS Map visualizing the river basins of Bangladesh",
+    tags: [
+      {
+        name: "ArcGIS Pro",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Hydrology tools",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GIS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: riverbas,
+    source_code_link: "https://github.com/RubelMehmed/fms",
   },
   {
     name: "Car Expo",

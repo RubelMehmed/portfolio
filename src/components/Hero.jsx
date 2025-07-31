@@ -10,26 +10,26 @@ const Hero = () => {
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-1 sm:h-77 h-40 violet-gradient' />
         </div>
 
             <div className="flex items-center flex-wrap gap-4">
               <div>
                   <h1 className={`${styles.heroHeadText} text-white`}>
-                  Hi, I'm <span className='text-[#a9abe9]'>Rubel Fakir</span>
+                  Hi, I'm <br className='sm:block hidden' /> <span className='text-[#aac3df]'>Rubel Fakir</span>
                   </h1>
                   <p className={`${styles.heroSubText} mt-2 text-white-100`}>
                   I transform data into <br className='sm:block hidden' /> interactive maps, visualizations, and web-apps
                  </p>
               </div>
               
-            <div>
-                {/* <img
-                src={RubelMehmed}
-                alt='Rubel Fakir'
-                className='w-30 h-30 sm:w-20 sm:h-30 rounded-full object-cover border-2 border-[#a9abe9] shadow-md'
-              /> */}
-            </div>
+              {/* <div className="flex-shrink-0">
+                <img
+                  src={RubelMehmed} // ensure this is a valid image import or URL
+                  alt="Rubel Fakir"
+                  className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full object-cover border-2 border-[#a9abe9] shadow-lg"
+                />
+              </div> */}
           </div>
           
 
